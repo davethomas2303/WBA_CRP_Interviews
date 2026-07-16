@@ -1,9 +1,7 @@
 // POST /api/book — books a slot, first in wins, one booking per coach
-const DAYS = ["fri17", "mon20", "wed22", "fri24"];
-const TIMES = ["1700", "1745", "1830", "1915", "2000"];
+const DAYS = ["mon27", "wed29", "fri31"];
+const TIMES = ["1700", "1745", "1830", "1915", "2000", "2045"];
 const VALID_SLOTS = new Set(DAYS.flatMap((d) => TIMES.map((t) => `${d}-${t}`)));
-// Extra slots on the two Fridays only
-["fri17-2045", "fri24-2045"].forEach((s) => VALID_SLOTS.add(s));
 
 const json = (obj, status = 200) =>
   new Response(JSON.stringify(obj), {
