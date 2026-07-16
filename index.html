@@ -155,7 +155,7 @@
   <div class="hero-inner">
     <span class="pill">2026–27 CRP COACH INTERVIEWS — STAGE 1</span>
     <h1>thank you <em>for your interest.</em></h1>
-    <p>The WBA panel is conducting interviews as part of the 2026–27 Warriors CRP coaching appointments. Interviews run for 45 minutes on four evenings across July. Pick the time that suits you best — first in, best dressed.</p>
+    <p>The WBA panel is conducting interviews as part of the 2026–27 Warriors CRP coaching appointments. Interviews run for 45 minutes across three evenings in late July. Pick the time that suits you best — first in, best dressed.</p>
     <div class="cta-row">
       <a class="btn btn-red" href="#book">book my slot</a>
       <a class="btn btn-ghost" href="https://www.warragulbasketball.org.au/wp-content/uploads/2026/07/WBA_CRP_Coach_PreEOI_Pack.pdf" id="coachPack" target="_blank" rel="noopener" download>coach information pack (pdf)</a>
@@ -246,10 +246,9 @@
 <script>
 /* ============ CONFIG — edit here ============ */
 const DAYS = [
-  { id:"fri17", dow:"Friday",    date:"17 July" },
-  { id:"mon20", dow:"Monday",    date:"20 July" },
-  { id:"wed22", dow:"Wednesday", date:"22 July" },
-  { id:"fri24", dow:"Friday",    date:"24 July" },
+  { id:"mon27", dow:"Monday",    date:"27 July" },
+  { id:"wed29", dow:"Wednesday", date:"29 July" },
+  { id:"fri31", dow:"Friday",    date:"31 July" },
 ];
 const TIMES = [
   { id:"1700", label:"5:00 PM" },
@@ -257,12 +256,10 @@ const TIMES = [
   { id:"1830", label:"6:30 PM" },
   { id:"1915", label:"7:15 PM" },
   { id:"2000", label:"8:00 PM" },
+  { id:"2045", label:"8:45 PM" },
 ];
-// Extra slots on specific evenings only
-const EXTRA_TIMES = {
-  fri17: [ { id:"2045", label:"8:45 PM" } ],
-  fri24: [ { id:"2045", label:"8:45 PM" } ],
-};
+// Extra slots on specific evenings only (none currently)
+const EXTRA_TIMES = {};
 function timesFor(dayId){ return TIMES.concat(EXTRA_TIMES[dayId] || []); }
 /* ============================================ */
 
