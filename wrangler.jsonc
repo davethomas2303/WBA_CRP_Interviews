@@ -1,0 +1,18 @@
+{
+  // Cloudflare Worker config for the CRP interview booking site
+  "name": "crp-interview-booking",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "BOOKINGS",
+      // Paste your KV namespace ID here — copy it from
+      // Cloudflare dashboard -> Storage & Databases -> KV (click the namespace)
+      "id": "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+    }
+  ]
+}
