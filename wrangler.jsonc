@@ -12,7 +12,7 @@
       "binding": "BOOKINGS",
       // Paste your KV namespace ID here — copy it from
       // Cloudflare dashboard -> Storage & Databases -> KV (click the namespace)
-      "id": "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+      "id": "97de80da3b9f4953b3c91714dae1a050"
     }
   ]
 }
