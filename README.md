@@ -59,3 +59,5 @@ In the KV namespace, delete the `slot:...` key (frees the time) and the
 - The slots API only exposes *which times are taken*, never names or emails.
 - Venue details aren't on the page yet — add them to the hero text or the
   confirmation message once confirmed.
+
+  
