@@ -155,7 +155,7 @@
   <div class="hero-inner">
     <span class="pill">2026–27 CRP COACH INTERVIEWS — STAGE 1</span>
     <h1>thank you <em>for your interest.</em></h1>
-    <p>The WBA panel is conducting interviews as part of the 2026–27 Warriors CRP coaching appointments. Interviews run for 45 minutes across three evenings in late July. Pick the time that suits you best — first in, best dressed.</p>
+    <p>Interviews run for 45 minutes at the Warragul Leisure Centre (Meeting Room) across four evenings in late July. Pick the time that suits you best — first in, best dressed.</p>
     <div class="cta-row">
       <a class="btn btn-red" href="#book">book my slot</a>
       <a class="btn btn-ghost" href="https://www.warragulbasketball.org.au/wp-content/uploads/2026/07/WBA_CRP_Coach_PreEOI_Pack.pdf" id="coachPack" target="_blank" rel="noopener" download>coach information pack (pdf)</a>
@@ -315,7 +315,7 @@ function renderSlots(){
 
 function renderPicked(){
   if(selectedSlot){
-    pickedEl.innerHTML = `You're booking: <b>${slotLabel(selectedSlot)}</b> — 45 minutes with the WBA panel.`;
+    pickedEl.innerHTML = `You're booking: <b>${slotLabel(selectedSlot)}</b> — 45 minutes with the WBA panel, Warragul Leisure Centre (Meeting Room).`;
   } else {
     pickedEl.textContent = "No time selected yet — tap an open slot to choose.";
   }
@@ -395,7 +395,7 @@ function resetBtn(){ submitBtn.disabled = !selectedSlot; submitBtn.textContent =
 
 function finishConfirm(name){
   document.getElementById("confirmSlot").textContent = slotLabel(selectedSlot);
-  document.getElementById("confirmWho").textContent = `Booked for ${name}. 45 minutes with the WBA coaching panel.`;
+  document.getElementById("confirmWho").textContent = `Booked for ${name}. 45 minutes with the WBA coaching panel — Warragul Leisure Centre, Meeting Room.`;
   document.getElementById("formWrap").style.display = "none";
   document.getElementById("confirmPanel").classList.add("show");
 }
