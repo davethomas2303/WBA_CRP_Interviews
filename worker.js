@@ -1,12 +1,12 @@
 // CRP Interview Booking — Cloudflare Worker
 // Serves the booking page (from /public) and handles the booking API.
 
-const DAYS = ["wed22", "fri24", "mon27"];
+const DAYS = ["mon20", "wed22", "mon27", "wed29"];
 const TIMES = ["1700", "1745", "1830", "1915", "2000", "2045"];
 const VALID_SLOTS = new Set(DAYS.flatMap((d) => TIMES.map((t) => `${d}-${t}`)));
 
 // Real dates for calendar events (Melbourne time, AEST in July)
-const DAY_DATES = { wed22: "2026-07-22", fri24: "2026-07-24", mon27: "2026-07-27" };
+const DAY_DATES = { mon20: "2026-07-20", wed22: "2026-07-22", mon27: "2026-07-27", wed29: "2026-07-29" };
 const SLOT_MINUTES = 45;
 
 const json = (obj, status = 200) =>
