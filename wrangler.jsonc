@@ -16,3 +16,13 @@
     }
   ]
 }
+{
+  "name": "crp-interview-booking",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "vars": { "ADMIN_KEY": "Warragul02" },
+  "kv_namespaces": [
+    { "binding": "BOOKINGS", "id": "your-existing-id-stays-here" }
+  ]
+}
