@@ -7,22 +7,13 @@
     "directory": "./public",
     "binding": "ASSETS"
   },
+  "vars": {
+    "ADMIN_KEY": "Warragul02"
+  },
   "kv_namespaces": [
     {
       "binding": "BOOKINGS",
-      // Paste your KV namespace ID here — copy it from
-      // Cloudflare dashboard -> Storage & Databases -> KV (click the namespace)
       "id": "97de80da3b9f4953b3c91714dae1a050"
     }
-  ]
-}
-{
-  "name": "crp-interview-booking",
-  "main": "worker.js",
-  "compatibility_date": "2026-07-01",
-  "assets": { "directory": "./public", "binding": "ASSETS" },
-  "vars": { "ADMIN_KEY": "Warragul02" },
-  "kv_namespaces": [
-    { "binding": "BOOKINGS", "id": "your-existing-id-stays-here" }
   ]
 }
